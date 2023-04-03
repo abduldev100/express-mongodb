@@ -1,0 +1,22 @@
+export default {
+    page: 1,
+    limit: 5,
+    lean: false,
+    leanWithId:false,
+    populate: false,
+    sort: false,
+    customLabels: {
+        totalDocs: "count",
+        docs: "results",
+        limit: false,
+        page: false,
+        nextPage: "next",
+        prevPage: "previous",
+        totalPages: false,
+        pagingCounter: false,
+        itemCount: false,
+        meta: false,
+        hasNextPage: false,
+        hasPrevPage: false,
+    },
+};
