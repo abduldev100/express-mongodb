@@ -1,0 +1,1404 @@
+{
+	"info": {
+		"_postman_id": "e19926f6-cca2-4b0d-a3df-f2004110fb47",
+		"name": "express_mongoose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"Ali\",\r\n    \"lastname\": \"Ahmed\",\r\n    \"username\": \"abdulahmed\",\r\n    \"email\": \"abdulahmed@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/6427f742eb4b8ed5c207369e",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"6427f742eb4b8ed5c207369e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstname\": \"Ali\",\r\n    \"lastname\": \"Ahmed\",\r\n    \"username\": \"abdulahmed\",\r\n    \"email\": \"abdulahmed@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/user/6427f742eb4b8ed5c207369e",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"user",
+										"6427f742eb4b8ed5c207369e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fb-qQWNqRKOJQdqdEUXtLCXXBZ/+Tk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:25:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6427f742eb4b8ed5c207369e\",\n    \"firstname\": \"Ali\",\n    \"lastname\": \"Ahmed\",\n    \"username\": \"abdulahmed\",\n    \"email\": \"abdulahmed@gmail.com\",\n    \"password\": \"123456\",\n    \"is_active\": true,\n    \"created_at\": \"2023-04-01T09:20:02.662Z\",\n    \"updated_at\": \"2023-04-01T09:24:40.839Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"Ali\",\r\n    \"lastname\": \"Ahmed\",\r\n    \"username\": \"abdulahmed\",\r\n    \"email\": \"abdulahmed@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"is_active\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstname\": \"Abdul\",\r\n    \"lastname\": \"Hannan\",\r\n    \"username\": \"abdulhannan\",\r\n    \"email\": \"abdulhannan@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"is_active\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/user",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "256"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"100-DifMN5wxplAgHSYg5MxtLOtiOP4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:19:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"firstname\": \"Abdul\",\n    \"lastname\": \"Hannan\",\n    \"username\": \"abdulhannan\",\n    \"email\": \"abdulhannan@gmail.com\",\n    \"password\": \"123456\",\n    \"is_active\": true,\n    \"_id\": \"6427f704eb4b8ed5c207369c\",\n    \"created_at\": \"2023-04-01T09:19:00.600Z\",\n    \"updated_at\": \"2023-04-01T09:19:00.600Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/user",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "764"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2fc-q6nDeJTi095ftlw2fm8uI/BtWNI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:20:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6427f6f9eb4b8ed5c207369a\",\n        \"firstname\": \"Abdul\",\n        \"lastname\": \"Rafay\",\n        \"username\": \"abdulrafay\",\n        \"email\": \"abdulrafay@gmail.com\",\n        \"password\": \"123456\",\n        \"is_active\": true,\n        \"created_at\": \"2023-04-01T09:18:49.713Z\",\n        \"updated_at\": \"2023-04-01T09:18:49.713Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6427f704eb4b8ed5c207369c\",\n        \"firstname\": \"Abdul\",\n        \"lastname\": \"Hannan\",\n        \"username\": \"abdulhannan\",\n        \"email\": \"abdulhannan@gmail.com\",\n        \"password\": \"123456\",\n        \"is_active\": true,\n        \"created_at\": \"2023-04-01T09:19:00.600Z\",\n        \"updated_at\": \"2023-04-01T09:19:00.600Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6427f742eb4b8ed5c207369e\",\n        \"firstname\": \"Ali\",\n        \"lastname\": \"Ahmed\",\n        \"username\": \"abdulahmed\",\n        \"email\": \"abdulahmed@gmail.com\",\n        \"password\": \"123456\",\n        \"is_active\": true,\n        \"created_at\": \"2023-04-01T09:20:02.662Z\",\n        \"updated_at\": \"2023-04-01T09:20:02.662Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/6427f742eb4b8ed5c207369e",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"6427f742eb4b8ed5c207369e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "single",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/user/6427f742eb4b8ed5c207369e",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"user",
+										"6427f742eb4b8ed5c207369e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fb-y/d7wqeYrBUR/6sWi4aEjnG0e84\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:21:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6427f742eb4b8ed5c207369e\",\n    \"firstname\": \"Ali\",\n    \"lastname\": \"Ahmed\",\n    \"username\": \"abdulahmed\",\n    \"email\": \"abdulahmed@gmail.com\",\n    \"password\": \"123456\",\n    \"is_active\": true,\n    \"created_at\": \"2023-04-01T09:20:02.662Z\",\n    \"updated_at\": \"2023-04-01T09:20:02.662Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/6427f96dd0ebf0cfbdee78b9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"6427f96dd0ebf0cfbdee78b9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/user/6427f96dd0ebf0cfbdee78b9",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"user",
+										"6427f96dd0ebf0cfbdee78b9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-05sALxLwT1ik9/qZK2sYw2X1co4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:29:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"Ali\",\r\n    \"lastname\": \"Ahmed\",\r\n    \"username\": \"abdulahmed\",\r\n    \"email\": \"abdulahmed@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/user/6427f742eb4b8ed5c207369e",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"6427f742eb4b8ed5c207369e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstname\": \"Ali\",\r\n    \"lastname\": \"Ahmed\",\r\n    \"username\": \"abdulahmed\",\r\n    \"email\": \"abdulahmed@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/user/6427f742eb4b8ed5c207369e",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"user",
+										"6427f742eb4b8ed5c207369e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fb-qQWNqRKOJQdqdEUXtLCXXBZ/+Tk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:25:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6427f742eb4b8ed5c207369e\",\n    \"firstname\": \"Ali\",\n    \"lastname\": \"Ahmed\",\n    \"username\": \"abdulahmed\",\n    \"email\": \"abdulahmed@gmail.com\",\n    \"password\": \"123456\",\n    \"is_active\": true,\n    \"created_at\": \"2023-04-01T09:20:02.662Z\",\n    \"updated_at\": \"2023-04-01T09:24:40.839Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"aaaa\",\r\n    \"is_active\": true,\r\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/category",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"user\",\r\n    \"is_active\": true,\r\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/category",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1-nijJ6e20ygmOOnaEnWdPsYo4B3c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:50:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"user\",\n    \"is_active\": true,\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n    \"_id\": \"6427fe7848bc881184d0f982\",\n    \"created_at\": \"2023-04-01T09:50:48.695Z\",\n    \"updated_at\": \"2023-04-01T09:50:48.695Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/category",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/category",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-NjoV70QqQjsEtfwXv6Rj37yVS2M\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:51:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6427fe7848bc881184d0f982\",\n        \"name\": \"user\",\n        \"is_active\": true,\n        \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n        \"created_at\": \"2023-04-01T09:50:48.695Z\",\n        \"updated_at\": \"2023-04-01T09:50:48.695Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/category/6427fe7848bc881184d0f982",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"category",
+								"6427fe7848bc881184d0f982"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "single",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/category/6427fe7848bc881184d0f982",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"category",
+										"6427fe7848bc881184d0f982"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c1-aLj3dpxUNPbIsU0E9j2R3A2xCu0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:51:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6427fe7848bc881184d0f982\",\n    \"name\": \"user\",\n    \"is_active\": true,\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n    \"created_at\": \"2023-04-01T09:50:48.695Z\",\n    \"updated_at\": \"2023-04-01T09:50:48.695Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/category/6427feba48bc881184d0f986",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"category",
+								"6427feba48bc881184d0f986"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/category/6427feba48bc881184d0f986",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"category",
+										"6427feba48bc881184d0f986"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-05sALxLwT1ik9/qZK2sYw2X1co4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 09:52:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "blogs",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"bbb\",\r\n    \"description\":\"abc\",\r\n    \"category\": \"6427fe7848bc881184d0f982\",\r\n    \"is_active\": true,\r\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/blog/642827978fe9784a14e8bd48",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"blog",
+								"642827978fe9784a14e8bd48"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"bbb\",\r\n    \"description\":\"abc\",\r\n    \"category\": \"6427fe7848bc881184d0f982\",\r\n    \"is_active\": true,\r\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/blog/642827978fe9784a14e8bd48",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"blog",
+										"642827978fe9784a14e8bd48"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "250"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fa-KwM5i0IrR9/xyPk6/OzcdUNqjZY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:47:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"642827978fe9784a14e8bd48\",\n    \"name\": \"bbb\",\n    \"description\": \"abc\",\n    \"category\": \"6427fe7848bc881184d0f982\",\n    \"is_active\": true,\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n    \"created_at\": \"2023-04-01T12:46:15.513Z\",\n    \"updated_at\": \"2023-04-01T12:47:26.041Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI5Zjk3OGY2ZDQ0YTdjOWQ2OTE3NzUiLCJpYXQiOjE2ODA1MTY1OTksImV4cCI6MTY4MDk0ODU5OX0.WgrJanKPJ0GT_dqkte6PkomGZRsGPTKaHP5jVAkF7js",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "abddd",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "bbdddddb",
+									"type": "default"
+								},
+								{
+									"key": "category",
+									"value": "6429edef424c46f63421a43d",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Abdul/Downloads/Pictures/screencapture-mansoorwelfare-2023-03-28-19_48_16.png"
+								},
+								{
+									"key": "is_active",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "created_by",
+									"value": "6429f978f6d44a7c9d691775",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/blog/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"blog",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"bbb\",\r\n    \"description\":\"abc\",\r\n    \"category\": \"6427fe7848bc881184d0f982\",\r\n    \"is_active\": true,\r\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/blog",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"blog"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "250"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fa-cS1al8bZdvJew1UHFQNAce5uH+8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:41:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"bbb\",\n    \"description\": \"abc\",\n    \"category\": \"6427fe7848bc881184d0f982\",\n    \"is_active\": true,\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n    \"_id\": \"642826618fe9784a14e8bd3c\",\n    \"created_at\": \"2023-04-01T12:41:05.614Z\",\n    \"updated_at\": \"2023-04-01T12:41:05.614Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/blog",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"blog"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/blog",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"blog"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "754"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f2-SNl5GGxeZP7JEqLjpWW7kJjohZE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:41:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"642826478fe9784a14e8bd38\",\n        \"name\": \"abc\",\n        \"description\": \"abc\",\n        \"category\": \"6427fe7848bc881184d0f982\",\n        \"is_active\": true,\n        \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n        \"created_at\": \"2023-04-01T12:40:39.537Z\",\n        \"updated_at\": \"2023-04-01T12:40:39.537Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6428265c8fe9784a14e8bd3a\",\n        \"name\": \"xyz\",\n        \"description\": \"abc\",\n        \"category\": \"6427fe7848bc881184d0f982\",\n        \"is_active\": true,\n        \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n        \"created_at\": \"2023-04-01T12:41:00.038Z\",\n        \"updated_at\": \"2023-04-01T12:41:00.038Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"642826618fe9784a14e8bd3c\",\n        \"name\": \"bbb\",\n        \"description\": \"abc\",\n        \"category\": \"6427fe7848bc881184d0f982\",\n        \"is_active\": true,\n        \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n        \"created_at\": \"2023-04-01T12:41:05.614Z\",\n        \"updated_at\": \"2023-04-01T12:41:05.614Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/blog/642826618fe9784a14e8bd3c",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"blog",
+								"642826618fe9784a14e8bd3c"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "single",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/blog/642826618fe9784a14e8bd3c",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"blog",
+										"642826618fe9784a14e8bd3c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "250"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fa-cUycP2+jjJPfsUXyEAJtHoeYRxI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:42:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"642826618fe9784a14e8bd3c\",\n    \"name\": \"bbb\",\n    \"description\": \"abc\",\n    \"category\": \"6427fe7848bc881184d0f982\",\n    \"is_active\": true,\n    \"created_by\": \"6427f6f9eb4b8ed5c207369a\",\n    \"created_at\": \"2023-04-01T12:41:05.614Z\",\n    \"updated_at\": \"2023-04-01T12:41:05.614Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/blog/642826618fe9784a14e8bd3c",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"blog",
+								"642826618fe9784a14e8bd3c"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/blog/642826618fe9784a14e8bd3c",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"blog",
+										"642826618fe9784a14e8bd3c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15-05sALxLwT1ik9/qZK2sYw2X1co4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 01 Apr 2023 12:42:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"abdul@gmail.com\",\r\n    \"password\": \"abc\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logged user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsIn5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI5Zjk3OGY2ZDQ0YTdjOWQ2OTE3NzUiLCJpYXQiOjE2ODA0NzU3MTIsImV4cCI6MTY4MDkwNzcxMn0.Dt0E_jvKKTyRPM27ZHrkwzfjexejRiBbX8WzMHc8p10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/logged-user",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"logged-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI5Zjk3OGY2ZDQ0YTdjOWQ2OTE3NzUiLCJpYXQiOjE2ODA0NzU3MTIsImV4cCI6MTY4MDkwNzcxMn0.Dt0E_jvKKTyRPM27ZHrkwzfjexejRiBbX8WzMHc8p10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/change-password",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"abdul@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/password-rest-email",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"password-rest-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Password reset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/reset-password/6429f978f6d44a7c9d691775/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI5Zjk3OGY2ZDQ0YTdjOWQ2OTE3NzUiLCJpYXQiOjE2ODA0Nzc1ODcsImV4cCI6MTY4MDQ3ODQ4N30.SE4kDwThQAGUxqPOB-cIx1pneN00Q9IpOYu25IFSUu8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reset-password",
+								"6429f978f6d44a7c9d691775",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NDI5Zjk3OGY2ZDQ0YTdjOWQ2OTE3NzUiLCJpYXQiOjE2ODA0Nzc1ODcsImV4cCI6MTY4MDQ3ODQ4N30.SE4kDwThQAGUxqPOB-cIx1pneN00Q9IpOYu25IFSUu8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:3000/api"
+		}
+	]
+}
